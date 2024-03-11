@@ -14,16 +14,16 @@ namespace OOD_first_project
             obj = ob;
         }
         
-        public void Serializ()
+        public void Serializ(string path)
         {
 
         var options = new JsonSerializerOptions
         {
-            WriteIndented = true // For pretty-printing the JSON
+            WriteIndented = true 
         };
 
         string jsonString = JsonSerializer.Serialize(obj, options);
-        File.WriteAllText("project.json", jsonString);
+        File.WriteAllText(path, jsonString);
         }
         
 

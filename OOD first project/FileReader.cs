@@ -15,7 +15,7 @@ namespace OOD_first_project
 
     public class FileReader
     {
-        private Dictionary<string, Func<string[], object>> objectFactory;
+        public Dictionary<string, Func<string[], object>> objectFactory;
 
         public FileReader()
         {
@@ -32,7 +32,7 @@ namespace OOD_first_project
         }
             public List<ulong> StringConvert( string str)
             {
-                var numberStrings = str.Split(';','[',']'); // Split string into parts
+                var numberStrings = str.Split(';','[',']'); 
                 List<ulong> numberList = new List<ulong>();
 
                 foreach (var numberString in numberStrings)

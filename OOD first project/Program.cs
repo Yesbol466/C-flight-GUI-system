@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOD_first_project.Factories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,9 @@ namespace OOD_first_project
             FileReader FR = new FileReader();
             var result = FR.ReadFromFile("example_data.ftr");
             Serializer SR = new Serializer(result);
-            SR.Serializ();
+            SR.Serializ("app.json");
+            BinaryFactory binaryFactory = new BinaryFactory();
+            binaryFactory.ReadFile("example_data.ftr");
         }        
     }
 }
