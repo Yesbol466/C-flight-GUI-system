@@ -9,8 +9,8 @@ namespace OOD_first_project
 {
     internal class Serializer
     {
-        List<object> obj = new List<object>();
-        public Serializer(List<object> ob) {
+        List<Data> obj = new List<Data>();
+        public Serializer(List<Data> ob) {
             obj = ob;
         }
         

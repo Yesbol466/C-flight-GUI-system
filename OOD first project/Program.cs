@@ -1,9 +1,11 @@
-﻿using OOD_first_project.Factories;
+﻿using FlightTrackerGUI;
+using OOD_first_project.Factories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace OOD_first_project
 {
@@ -15,8 +17,19 @@ namespace OOD_first_project
             var result = FR.ReadFromFile("example_data.ftr");
             Serializer SR = new Serializer(result);
             SR.Serializ("app.json");
-            BinaryFactory binaryFactory = new BinaryFactory();
-            binaryFactory.ReadFile("example_data.ftr");
+            Server server = new Server("example_data.ftr");
+            server.ReadFile();
+            Thread thread = new Thread(new ThreadStart( Runner.Run));
+            thread.Start(); 
+            GUIUpdater.UpdateGUIPeriodically();
+            Console.WriteLine("GUI is running. Press any key to exit...");
+            Console.ReadKey();
+            if (thread.IsAlive)
+            {
+                thread.Interrupt(); 
+                thread.Join();
+            }
+
         }        
     }
 }

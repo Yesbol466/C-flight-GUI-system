@@ -15,11 +15,11 @@ namespace OOD_first_project
 
     public class FileReader
     {
-        public Dictionary<string, Func<string[], object>> objectFactory;
+        public Dictionary<string, Func<string[], Data>> objectFactory;
 
         public FileReader()
         {
-            objectFactory = new Dictionary<string, Func<string[], object>>()
+            objectFactory = new Dictionary<string, Func<string[], Data>>()
         {
             { "C", parts => new Crew ( ulong.Parse(parts[1]),parts[2],ulong.Parse(parts[3]),parts[4],parts[5],ushort.Parse(parts[6]),parts[7]) },
             {"AI",parts=>new AirPort(ulong.Parse(parts[1]),parts[2],parts[3],float.Parse(parts[4]),float.Parse(parts[5]),float.Parse(parts[6]),parts[7]) },
@@ -39,15 +39,15 @@ namespace OOD_first_project
                 {
                     if (ulong.TryParse(numberString, out ulong number))
                     {
-                        numberList.Add(number); // Add the parsed number to the list
+                        numberList.Add(number); 
                     }
                 }
                     return numberList;
             }
 
-        public List<object> ReadFromFile(string filePath)
+        public List<Data> ReadFromFile(string filePath)
         {
-            var objects = new List<object>();
+            var datas = new List<Data>();
             var lines = File.ReadAllLines(filePath);
 
             foreach (var line in lines)
@@ -55,11 +55,11 @@ namespace OOD_first_project
                 var parts = line.Split(',');
                 if (objectFactory.TryGetValue(parts[0], out var createObject))
                 {
-                    objects.Add(createObject(parts));
+                    datas.Add(createObject(parts));
                 }
             }
 
-            return objects;
+            return datas;
         }
     }
 

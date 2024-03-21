@@ -1,20 +1,37 @@
 ﻿using System.Dynamic;
 using System.Collections;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
+[JsonDerivedType(typeof(Crew))]
+[JsonDerivedType(typeof(AirPort))]
+[JsonDerivedType(typeof(Passenger))]
+[JsonDerivedType(typeof(PassengerPlane))]
+[JsonDerivedType(typeof(Cargo))]
+[JsonDerivedType(typeof(CargoPlane))]
+[JsonDerivedType(typeof(Flight))]
 
-public class Crew
+public abstract class Data
 {
     public UInt64 ID { get; set; }
+    public Data(UInt64 ID)
+    {
+        this.ID = ID;
+    }
+}
+
+public class Crew:Data
+{
+    
     public string Name { get; set; }
     public UInt64 Age { get; set; }
     public string Phone { get; set; }
     public string Email { get; set; }
     public UInt16 practice { get; set; }
     public string Role { get; set; }
-    public Crew(ulong iD,string name,ulong age, string phone, string email, ushort practice, string role)
+    public Crew(ulong iD,string name,ulong age, string phone, string email, ushort practice, string role):base(iD)
     {
-        ID = iD;
+        
         Name = name;
         Age = age;
         Phone = phone;
@@ -24,18 +41,18 @@ public class Crew
     }
 }
 
-public class Passenger
+public class Passenger:Data
 {
-    public UInt64 ID { get; set; }
+
     public string name { get; set; }
     public UInt64 Age { get; set; }
     public string Phone { get; set; }
     public string Email { get; set; }
     public string Class { get; set; }
     public UInt64 Miles { get; set; }
-    public Passenger(ulong iD,string name,ulong age,  string phone, string email, string @class, ulong miles)
+    public Passenger(ulong iD,string name,ulong age,  string phone, string email, string @class, ulong miles):base(iD)
     {
-        ID = iD;
+       
         this.name = name;
         Age = age;
         Phone = phone;
@@ -45,16 +62,16 @@ public class Passenger
     }
 }
 
-public class CargoPlane
+public class CargoPlane:Data
 {
-    public UInt64 ID { get; set; }
+   
     public string Serial { get; set; }
     public string Country { get; set; }
     public string Model { get; set; }
     public Single MaxLoad { get; set; }
-    public CargoPlane(ulong iD, string serial, string country, string model, float maxLoad)
+    public CargoPlane(ulong iD, string serial, string country, string model, float maxLoad):base(iD) 
     {
-        ID = iD;
+        
         Serial = serial;
         Country = country;
         Model = model;
@@ -62,24 +79,24 @@ public class CargoPlane
     }
 }
 
-public class Cargo
+public class Cargo:Data
 {
-    public UInt64 ID { get; set; }
+    
     public Single Weight { get; set; }
     public string Country { get; set; }
     public string Description { get; set; }
-    public Cargo(ulong iD, float weight, string country, string description)
+    public Cargo(ulong iD, float weight, string country, string description):base(iD)
     {
-        ID = iD;
+        
         Weight = weight;
         Country = country;
         Description = description;
     }
 }
 
-public class PassengerPlane
+public class PassengerPlane:Data
 {
-    public UInt64 ID { get; set; }
+    
     public string Serial { get; set; }
     public string Country { get; set; }
     public string Model { get; set; }
@@ -87,9 +104,9 @@ public class PassengerPlane
     public UInt16 FirstClassSize { get; set; }
     public UInt16 BusinessClassSize { get; set; }
     public UInt16 EconomyClassSize { get;set; }
-    public PassengerPlane(ulong iD,string serial, string country, string model, ushort firstClassSize, ushort businessClassSize, ushort economyClassSize)
+    public PassengerPlane(ulong iD,string serial, string country, string model, ushort firstClassSize, ushort businessClassSize, ushort economyClassSize):base(iD) 
     {
-        ID = iD;
+        
         Serial = serial;
         Country = country;
         Model = model;
@@ -99,18 +116,18 @@ public class PassengerPlane
     }
 }
 
-public class AirPort
+public class AirPort:Data
 {
-    public UInt64 ID { get; set; }
+    
     public string Name { get; set; }   
     public string Code { get; set; }
     public Single Longitude { get; set; }
     public Single Latitude { get; set; }
     public Single AMSL { get; set; }
     public string Country { get; set; }
-    public AirPort(ulong iD,string name, string code,float longitude, float latitude, float aMSL, string country)
+    public AirPort(ulong iD,string name, string code,float longitude, float latitude, float aMSL, string country):base(iD) 
     {
-        ID = iD;
+        
         Name = name;
         Code = code;
         Longitude = longitude;
@@ -120,9 +137,9 @@ public class AirPort
     }
 }
 
-public class Flight
+public class Flight:Data
 {
-    public UInt64 ID { get; set; }
+   
     public UInt64 OriginID { get; set; }
     public UInt64 TargetID { get; set;}
     public string TakeoffTime { get; set; }
@@ -133,9 +150,9 @@ public class Flight
     public UInt64 PlaneID { get;set; }
     public List<ulong> CrewIDs { get; set; }
     public List<ulong> LoadIDs { get; set; }
-    public Flight(ulong iD, ulong originID, ulong targetID,string landingTime, string takeoffTime,float longitude, float latitute,float amsl,ulong planeID,   List<ulong> CrewiDs,List<ulong> loadids)
+    public Flight(ulong iD, ulong originID, ulong targetID,string landingTime, string takeoffTime,float longitude, float latitute,float amsl,ulong planeID,   List<ulong> CrewiDs,List<ulong> loadids):base(iD) 
     {
-        ID = iD;
+        
         OriginID = originID;
         TargetID = targetID;
         LandingTime = landingTime;
