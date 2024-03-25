@@ -26,7 +26,7 @@ namespace OOD_first_project
             Simulator = new NetworkSourceSimulator.NetworkSourceSimulator(path,0,1);
 
         }
-        public void ReadFile()
+        public List<Data> ReadFile()
         {
 
             List<Data> list = new List<Data>();
@@ -59,6 +59,7 @@ namespace OOD_first_project
                 }
             }
             thread.Join();
+            return list;
         }
     }
 }

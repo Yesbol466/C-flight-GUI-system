@@ -3,16 +3,19 @@ using System.Timers;
 
 namespace OOD_first_project
 {
-    public static class GUIUpdater
+   
+    public class GUIAdapter:IGUIUpdater
     {
-        private static string filePath = "example_data.ftr"; 
+        
 
-        public static void UpdateGUIPeriodically()
+        public void UpdateGUIPeriodically()
         {
             var allData = new FileReader().ReadFromFile("example_data.ftr");
-            var airports = LoadAirports(allData);
-            var flights = LoadFlights(allData);
+           
 
+            var airports = HelperMethods.LoadAirports(allData);
+            var flights = HelperMethods.LoadFlights(allData);
+            
             while (true)
             {
                 FlightsGUIData flightsGUIData = new FlightsGUIData();
@@ -23,50 +26,80 @@ namespace OOD_first_project
                         continue;
                     if (DateTime.UtcNow < DateTime.Parse(flight.TakeoffTime))
                         continue;
+                    updateFlightOnMap(flight,airports);
                     var flightGUI = FlightDataConverter.ConvertToFlightGUI(flight, airports);
                     const double positionChangeThreshold = 0.01;
-                    if (Math.Abs(flightGUI.WorldPosition.Longitude - flight.Longitude) < positionChangeThreshold &&
-                        Math.Abs(flightGUI.WorldPosition.Latitude - flight.Latitute) < positionChangeThreshold)
+                    //if (Math.Abs(flightGUI.WorldPosition.Longitude - flight.Longitude) < positionChangeThreshold &&
+                    //    Math.Abs(flightGUI.WorldPosition.Latitude - flight.Latitute) < positionChangeThreshold)
+                    //    continue;
+                    list.Add(flightGUI);
+                }
+                
+                flightsGUIData.UpdateFlights(list);
+                Runner.UpdateGUI(flightsGUIData);
+                list.Clear();
+                Thread.Sleep(1000);
+            }
+        }
+       public void UpdateGUIPeriodicallyInStream()
+        {
+            var allDatabin = new Server("example_data.ftr").ReadFile();
+            var airportsinStream = HelperMethods.LoadAirports(allDatabin);
+            var flightsinStream = HelperMethods.LoadFlights(allDatabin);
+            while (true)
+            {
+                FlightsGUIData flightsGUIData = new FlightsGUIData();
+                var list = new List<FlightGUI>();
+                foreach (var flight in flightsinStream)
+                {
+                    if (DateTime.UtcNow >= DateTime.Parse(flight.LandingTime))
                         continue;
+                    if (DateTime.UtcNow < DateTime.Parse(flight.TakeoffTime))
+                        continue;
+                    updateFlightOnMap(flight, airportsinStream);
+                    var flightGUI = FlightDataConverter.ConvertToFlightGUI(flight, airportsinStream);
+                    const double positionChangeThreshold = 0.01;
+                    //if (Math.Abs(flightGUI.WorldPosition.Longitude - flight.Longitude) < positionChangeThreshold &&
+                    //    Math.Abs(flightGUI.WorldPosition.Latitude - flight.Latitute) < positionChangeThreshold)
+                    //    continue;
                     list.Add(flightGUI);
                 }
                 flightsGUIData.UpdateFlights(list);
                 Runner.UpdateGUI(flightsGUIData);
-                
+
                 Thread.Sleep(1000);
             }
         }
-       
 
-
-
-
-        private static List<Flight> LoadFlights(List<Data> datas)
+        public void updateFlightOnMap(Flight flight, Dictionary<ulong, AirPort> airports)
         {
+            var origin = airports[flight.OriginID];
+            var destination = airports[flight.TargetID];
+            var currentPosition = CalculateCurrentPosition(origin, destination, flight.TakeoffTime, flight.LandingTime);
+            
+            flight.Latitute = currentPosition.X;
+            flight.Longitude = currentPosition.Y;
+        }
+        private static (float Y, float X) CalculateCurrentPosition(AirPort origin, AirPort destination, string takeoffTime, string landingTime)
+        {
+            DateTime takeoff = DateTime.Parse(takeoffTime);
+            DateTime landing = DateTime.Parse(landingTime);
+            DateTime now = DateTime.UtcNow;
 
-            var flights = new List<Flight>();
-            foreach (var data in datas)
-            {
-                if (data is Flight flight)
-                {
-                    flights.Add(flight);
-                }
-            }
-            return flights;
+            if (now < takeoff) return (origin.Longitude, origin.Latitude);
+            if (now > landing) return (destination.Longitude, destination.Latitude);
+
+            double totalFlightDuration = (landing - takeoff).TotalSeconds;
+            double elapsedFlightDuration = (now - takeoff).TotalSeconds;
+            double progress = elapsedFlightDuration / totalFlightDuration;
+
+            double currentLongitude = origin.Longitude + (destination.Longitude - origin.Longitude) * progress;
+            double currentLatitude = origin.Latitude + (destination.Latitude - origin.Latitude) * progress;
+
+            return ((float)currentLongitude, (float)currentLatitude);
         }
 
-        public static Dictionary<ulong, AirPort> LoadAirports(List<Data> datas)
-        {
 
-            var airports = new Dictionary<ulong, AirPort>();
-            foreach (var data in datas)
-            {
-                if (data is AirPort airport)
-                {
-                    airports[airport.ID] = airport;
-                }
-            }
-            return airports;
-        }
+
     }
 }

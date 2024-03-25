@@ -20,8 +20,11 @@ namespace OOD_first_project
             Server server = new Server("example_data.ftr");
             server.ReadFile();
             Thread thread = new Thread(new ThreadStart( Runner.Run));
-            thread.Start(); 
-            GUIUpdater.UpdateGUIPeriodically();
+            thread.Start();
+            GUIAdapter adapter = new GUIAdapter();
+            adapter.UpdateGUIPeriodically();
+            
+            //adapter.UpdateGUIPeriodicallyInStream();
             Console.WriteLine("GUI is running. Press any key to exit...");
             Console.ReadKey();
             if (thread.IsAlive)
