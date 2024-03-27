@@ -13,18 +13,18 @@ namespace OOD_first_project
     {
     static void Main(string[] args)
         {
-            FileReader FR = new FileReader();
-            var result = FR.ReadFromFile("example_data.ftr");
-            Serializer SR = new Serializer(result);
-            SR.Serializ("app.json");
-            Server server = new Server("example_data.ftr");
-            server.ReadFile();
+            //FileReader FR = new FileReader();
+            //var result = FR.ReadFromFile("example_data.ftr");
+            //Serializer SR = new Serializer(result);
+            //SR.Serializ("app.json");
+            //Server server = new Server("example_data.ftr");
+            //server.ReadFile();
             Thread thread = new Thread(new ThreadStart( Runner.Run));
             thread.Start();
             GUIAdapter adapter = new GUIAdapter();
-            adapter.UpdateGUIPeriodically();
+            //adapter.UpdateGUIPeriodically();
             
-            //adapter.UpdateGUIPeriodicallyInStream();
+            adapter.UpdateGUIPeriodicallyInStream();
             Console.WriteLine("GUI is running. Press any key to exit...");
             Console.ReadKey();
             if (thread.IsAlive)

@@ -28,10 +28,8 @@ namespace OOD_first_project
                         continue;
                     updateFlightOnMap(flight,airports);
                     var flightGUI = FlightDataConverter.ConvertToFlightGUI(flight, airports);
-                    const double positionChangeThreshold = 0.01;
-                    //if (Math.Abs(flightGUI.WorldPosition.Longitude - flight.Longitude) < positionChangeThreshold &&
-                    //    Math.Abs(flightGUI.WorldPosition.Latitude - flight.Latitute) < positionChangeThreshold)
-                    //    continue;
+                   
+                    
                     list.Add(flightGUI);
                 }
                 
@@ -58,10 +56,8 @@ namespace OOD_first_project
                         continue;
                     updateFlightOnMap(flight, airportsinStream);
                     var flightGUI = FlightDataConverter.ConvertToFlightGUI(flight, airportsinStream);
-                    const double positionChangeThreshold = 0.01;
-                    //if (Math.Abs(flightGUI.WorldPosition.Longitude - flight.Longitude) < positionChangeThreshold &&
-                    //    Math.Abs(flightGUI.WorldPosition.Latitude - flight.Latitute) < positionChangeThreshold)
-                    //    continue;
+                   
+                    
                     list.Add(flightGUI);
                 }
                 flightsGUIData.UpdateFlights(list);
