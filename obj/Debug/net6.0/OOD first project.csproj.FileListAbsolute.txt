@@ -1,0 +1,15 @@
+C:\Users\66985\source\repos\OOD first project\OOD first project\bin\Debug\net6.0\OOD first project.exe
+C:\Users\66985\source\repos\OOD first project\OOD first project\bin\Debug\net6.0\OOD first project.deps.json
+C:\Users\66985\source\repos\OOD first project\OOD first project\bin\Debug\net6.0\OOD first project.runtimeconfig.json
+C:\Users\66985\source\repos\OOD first project\OOD first project\bin\Debug\net6.0\OOD first project.dll
+C:\Users\66985\source\repos\OOD first project\OOD first project\bin\Debug\net6.0\OOD first project.pdb
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\OOD first project.csproj.AssemblyReference.cache
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\OOD first project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\OOD first project.AssemblyInfoInputs.cache
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\OOD first project.AssemblyInfo.cs
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\OOD first project.csproj.CoreCompileInputs.cache
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\OOD first project.dll
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\refint\OOD first project.dll
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\OOD first project.pdb
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\OOD first project.genruntimeconfig.cache
+C:\Users\66985\source\repos\OOD first project\OOD first project\obj\Debug\net6.0\ref\OOD first project.dll
