@@ -24,12 +24,42 @@ For a closer look at the C# Flight GUI System in action, watch this [demonstrati
 
 ### Installation
 
-1. Clone the repository or download the source code:
+1. Clone the repository or download the source code.
 2. Open the solution file (`CSharpFlightGUISystem.sln`) in Visual Studio.
 3. Build the solution by navigating to `Build > Build Solution`.
-4. Run the application by pressing `F5` or navigating to `Debug > Start Debugging`.
+4. **Important**: Place the DLL files you recently downloaded into the `.net8.0` directory in the `bin` folder to ensure the application works correctly.
+5. Run the application by pressing `F5` or navigating to `Debug > Start Debugging`.
 
 ## Usage
+
+The main program is divided into five parts. To see different functionalities, follow these steps:
+
+1. **Snapshots (Part 1)**:
+   - Uncomment Part 1 in the code.
+   - Comment out the other parts (Parts 2, 3, 4, and 5).
+   - Run the application to see the snapshots the system creates.
+   
+2. **Thread Reading (Part 2)**:
+   - Uncomment Part 2 in the code.
+   - Comment out the other parts (Parts 1, 3, 4, and 5).
+   - Run the application to see the thread reading functionality.
+   
+3. **GUI Representation (Part 3)**:
+   - Uncomment Part 3 in the code.
+   - Comment out the other parts (Parts 1, 2, 4, and 5).
+   - Run the application to see the GUI representation.
+
+4. **News on Different Devices (Part 4)**:
+   - Uncomment Part 4 in the code.
+   - Comment out the other parts (Parts 1, 2, 3, and 5).
+   - Run the application to see news on different devices using reportable reading.
+
+5. **Flight GUI System (Part 5)**:
+   - Uncomment Part 5 in the code.
+   - Comment out the other parts (Parts 1, 2, 3, and 4).
+   - Run the application to see reportable reading and change of position in the Flight GUI system.
+
+### Additional Usage Instructions
 
 1. **Load Flight Data**: Begin by loading an `.ftr` file through the application menu to import flight and airport data.
 2. **Simulate Flight Operations**: Use the GUI to place flights, set paths, and adjust airport layouts. Real-time simulation provides immediate feedback on changes.
