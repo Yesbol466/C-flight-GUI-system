@@ -1,0 +1,201 @@
+app started
+Before Update: 10
+After Update: 10
+Before Update: 55
+After Update: 1631
+Before Update: 340
+After Update: 2209
+Before Update: 457
+After Update: 1236
+Before Update: 506
+After Update: 2033
+Before Update: 147
+After Update: 2401
+Before Update: 574
+After Update: 1962
+Before Update: 1070
+After Update: 1579
+Before Update: 618
+After Update: 1158
+Error: No object found with ID 1326
+Before Update: 104
+After Update: 1315
+Error: No object found with ID 1472
+Error: No object found with ID 1392
+Error: No object found with ID 1481
+Before Update: 182
+After Update: 1005
+Before Update: 29
+After Update: 2089
+Error: No object found with ID 1485
+Before Update: 499
+After Update: 1329
+Error: No object found with ID 1475
+Before Update: 171
+After Update: 2098
+Before Update: 357
+After Update: 2203
+Before Update: 358
+After Update: 1027
+Error: No object found with ID 1347
+Before Update: 962
+After Update: 1527
+Before Update: 627
+After Update: 1561
+Before Update: 792
+After Update: 1234
+Before Update: 650
+After Update: 2321
+Error: No object found with ID 1431
+Before Update: 740
+After Update: 2215
+Before Update: 475
+After Update: 1630
+Before Update 1073 :item latitude =  3.4,longtude = 157.99
+after Update 1073 :item latitude =  -87.924355,longtude = -145.21829
+Before Update 1036 :item latitude =  -4.56,longtude = 99
+after Update 1036 :item latitude =  -65.998566,longtude = -115.52941
+Before Update 1103 :item latitude =  20.41,longtude = -21.23
+after Update 1103 :item latitude =  -59.330032,longtude = -67.17546
+Before Update 1088 :item latitude =  17.51,longtude = 165.85
+after Update 1088 :item latitude =  27.736376,longtude = 48.47077
+Before Update 1000 :item latitude =  5.62,longtude = 98.77
+after Update 1000 :item latitude =  53.14479,longtude = 15.235422
+Before Update 1175 :item latitude =  40.338814,longtude = 44.447903
+after Update 1175 :item latitude =  87.035736,longtude = -55.384537
+Before Update 1008 :item latitude =  30.4,longtude = 174.05
+after Update 1008 :item latitude =  56.606426,longtude = 96.664536
+Before Update 1013 :item latitude =  -8.01,longtude = 175.36
+after Update 1013 :item latitude =  54.21434,longtude = -146.93097
+Before Update 984 :item latitude =  14.13,longtude = 48.76
+after Update 984 :item latitude =  -73.83688,longtude = -171.53268
+Before Update 1143 :item latitude =  53.09,longtude = -91.13
+after Update 1143 :item latitude =  -6.869265,longtude = -5.95481
+Before Update 980 :item latitude =  9.42,longtude = 72.2
+after Update 980 :item latitude =  1.479755,longtude = -82.12707
+Before Update 1019 :item latitude =  -7.0808616,longtude = 151.75757
+after Update 1019 :item latitude =  63.14051,longtude = -18.238646
+Error: No AirPort found with ID 321
+Before Update 1073 :item latitude =  -87.924355,longtude = -145.21829
+after Update 1073 :item latitude =  27.09598,longtude = -108.147354
+Before Update 1036 :item latitude =  -65.998566,longtude = -115.52941
+after Update 1036 :item latitude =  60.96732,longtude = -103.43464
+Before Update 1103 :item latitude =  -59.330032,longtude = -67.17546
+after Update 1103 :item latitude =  -79.42511,longtude = -161.88493
+Before Update 1088 :item latitude =  27.736376,longtude = 48.47077
+after Update 1088 :item latitude =  81.17543,longtude = -140.51558
+Before Update 1000 :item latitude =  53.14479,longtude = 15.235422
+after Update 1000 :item latitude =  -13.053079,longtude = -133.23634
+Before Update 1175 :item latitude =  87.035736,longtude = -55.384537
+after Update 1175 :item latitude =  -66.756035,longtude = 148.0308
+Before Update 1008 :item latitude =  56.606426,longtude = 96.664536
+after Update 1008 :item latitude =  -10.536424,longtude = -54.132835
+Before Update 1013 :item latitude =  54.21434,longtude = -146.93097
+after Update 1013 :item latitude =  81.83095,longtude = 33.84093
+Before Update 984 :item latitude =  -73.83688,longtude = -171.53268
+after Update 984 :item latitude =  -67.73591,longtude = 20.370777
+Before Update 1143 :item latitude =  -6.869265,longtude = -5.95481
+after Update 1143 :item latitude =  20.052593,longtude = -0.749077
+Before Update 980 :item latitude =  1.479755,longtude = -82.12707
+after Update 980 :item latitude =  63.623093,longtude = 139.57149
+Before Update 1019 :item latitude =  63.14051,longtude = -18.238646
+after Update 1019 :item latitude =  -53.845642,longtude = 97.861275
+Error: No AirPort found with ID 321
+Before Update 1073 :item latitude =  27.09598,longtude = -108.147354
+after Update 1073 :item latitude =  -5.012481,longtude = 47.96795
+Before Update 1036 :item latitude =  60.96732,longtude = -103.43464
+after Update 1036 :item latitude =  -12.826984,longtude = -24.074
+Before Update 1103 :item latitude =  -79.42511,longtude = -161.88493
+after Update 1103 :item latitude =  -70.61774,longtude = -108.28665
+Before Update 1088 :item latitude =  81.17543,longtude = -140.51558
+after Update 1088 :item latitude =  -8.535289,longtude = -169.05829
+Before Update 1000 :item latitude =  -13.053079,longtude = -133.23634
+after Update 1000 :item latitude =  -83.64768,longtude = 140.71909
+Before Update 1175 :item latitude =  -66.756035,longtude = 148.0308
+after Update 1175 :item latitude =  13.467536,longtude = 155.66397
+Before Update 1008 :item latitude =  -10.536424,longtude = -54.132835
+after Update 1008 :item latitude =  -63.151962,longtude = 13.895434
+Before Update 1013 :item latitude =  81.83095,longtude = 33.84093
+after Update 1013 :item latitude =  2.161791,longtude = 32.557625
+Before Update 984 :item latitude =  -67.73591,longtude = 20.370777
+after Update 984 :item latitude =  -27.659632,longtude = 35.00642
+Before Update 1143 :item latitude =  20.052593,longtude = -0.749077
+after Update 1143 :item latitude =  20.7811,longtude = -149.48839
+Before Update 980 :item latitude =  63.623093,longtude = 139.57149
+after Update 980 :item latitude =  42.637367,longtude = -56.339127
+Before Update 1019 :item latitude =  -53.845642,longtude = 97.861275
+after Update 1019 :item latitude =  21.58896,longtude = -4.987317
+Before Update 234: Phone = 366-468-9423, email = jasoncook3575@gmail.com
+after Update 234: Phone = 382-227-2487, email = hjghjchbxjgb@abilitys.site
+Before Update 102: Phone = 615-473-6079, email = scottalvarez8287@gmail.com
+after Update 102: Phone = 383-287-1506, email = nebolondicsal@nguyenvuquocanh.com
+Before Update 265: Phone = 126-187-5198, email = tonyvazquez4853@gmail.com
+after Update 265: Phone = 320-401-1385, email = nekropolis@becknellsbakery.com
+Before Update 156: Phone = 306-563-6137, email = rebeccataylor6473@gmail.com
+after Update 156: Phone = 153-734-8335, email = vicay2006@ebarg.net
+Before Update 163: Phone = 995-001-7129, email = johnjohnson2797@gmail.com
+after Update 163: Phone = 633-644-7562, email = judsuss@naverly.com
+Before Update 264: Phone = 134-860-8927, email = coreythomas2128@gmail.com
+after Update 264: Phone = 505-331-4035, email = gr8find@abilitys.site
+Before Update 157: Phone = 158-552-8728, email = brianstephens694@gmail.com
+after Update 157: Phone = 132-878-5307, email = jaclyn78@abilitys.site
+Before Update 261: Phone = 974-420-5409, email = sarahhobbs1352@gmail.com
+after Update 261: Phone = 430-361-7186, email = shaitis@centromedicoesteticodsagas.com
+Before Update 251: Phone = 833-252-8126, email = rebeccadean4758@gmail.com
+after Update 251: Phone = 385-172-2321, email = eyon@btcmod.com
+Error: No Passenger found with ID 171
+Before Update 115: Phone = 463-722-9752, email = philipbell3773@gmail.com
+after Update 115: Phone = 635-084-5411, email = bevzsergey1972@domiaaan2.online
+Before Update 144: Phone = 614-203-0297, email = paulmiller1295@gmail.com
+after Update 144: Phone = 076-370-5877, email = ertan4@villastream.xyz
+Before Update 154: Phone = 906-465-6730, email = aaronbeasley2512@gmail.com
+after Update 154: Phone = 885-053-2101, email = voteforpablo@dealyaari.com
+Before Update 281: Phone = 626-752-6781, email = kristenpeterson4653@gmail.com
+after Update 281: Phone = 784-272-4668, email = saver7@degioparfume.com
+Before Update 131: Phone = 442-521-4222, email = makaylavillanueva2283@gmail.com
+after Update 131: Phone = 070-023-1168, email = strobl@rhafhamed.online
+Before Update 223: Phone = 807-553-9928, email = andrewpark3633@gmail.com
+after Update 223: Phone = 311-773-0422, email = ckwon@sdaouig2.shop
+Before Update 248: Phone = 346-535-4600, email = johnwalker2730@gmail.com
+after Update 248: Phone = 707-216-4622, email = sukur1995tm@havenbeat.com
+Error: No Passenger found with ID 171
+Before Update 270: Phone = 901-436-5934, email = vanessarivera411@gmail.com
+after Update 270: Phone = 267-744-0251, email = heats302@supersetsbarbershop.com
+Before Update 255: Phone = 510-733-2602, email = melissaroberts5088@gmail.com
+after Update 255: Phone = 368-463-7437, email = s151236@alphabrc.com
+Before Update 112: Phone = 432-154-5129, email = jamesrobertson4976@gmail.com
+after Update 112: Phone = 064-178-6230, email = oksanahatipova@degioparfume.com
+Before Update 250: Phone = 767-761-2921, email = davidmckenzie1667@gmail.com
+after Update 250: Phone = 277-008-6812, email = alanste@koreaful.com
+Before Update 268: Phone = 953-026-9876, email = jennifercastillo4844@gmail.com
+after Update 268: Phone = 524-850-0158, email = lanselot095@alexcabrera.net
+Before Update 148: Phone = 236-702-8671, email = chadlee7580@gmail.com
+after Update 148: Phone = 166-418-6830, email = sleeepy3@sportscardsfanatics.com
+Error: No Passenger found with ID 147
+Before Update 239: Phone = 625-332-7250, email = carllove4204@gmail.com
+after Update 239: Phone = 466-371-4357, email = varstar@sportscardsfanatics.com
+Before Update 206: Phone = 202-755-5253, email = juliedunn154@gmail.com
+after Update 206: Phone = 431-481-8456, email = deirdre10@speeddataanalytics.com
+Before Update 281: Phone = 784-272-4668, email = saver7@degioparfume.com
+after Update 281: Phone = 867-441-4812, email = nofear7@maintenances.us
+Error: No Passenger found with ID 104
+Before Update 247: Phone = 377-170-6796, email = carolynavila7464@gmail.com
+after Update 247: Phone = 106-665-7586, email = nikitalykov74@kongtoan.com
+Before Update 237: Phone = 444-110-6050, email = martinpope9837@gmail.com
+after Update 237: Phone = 673-107-2151, email = mrmojo23@otpku.com
+Before Update 295: Phone = 697-311-9160, email = veronicaanderson9326@gmail.com
+after Update 295: Phone = 424-487-6120, email = aren01@muataikhoan.info
+Before Update 122: Phone = 499-280-0374, email = laurenpreston1321@gmail.com
+after Update 122: Phone = 878-343-0016, email = ggfre@domiaaan2.online
+Before Update 127: Phone = 898-187-5805, email = sarahgibson2084@gmail.com
+after Update 127: Phone = 712-023-7872, email = muhidshamsudinov@rftdsagfdsv.shop
+Before Update 285: Phone = 725-323-0429, email = kevinlivingston7476@gmail.com
+after Update 285: Phone = 063-852-3407, email = asiak@utplexpotrabajos.com
+Before Update 115: Phone = 635-084-5411, email = bevzsergey1972@domiaaan2.online
+after Update 115: Phone = 342-403-6232, email = rmbpjvc@mytempmail.org
+Before Update 243: Phone = 386-113-8841, email = susangallegos1958@gmail.com
+after Update 243: Phone = 578-537-2813, email = lance199115@utplexpotrabajos.com
+Before Update 217: Phone = 892-636-7255, email = louisbeck2619@gmail.com
+after Update 217: Phone = 872-423-1725, email = dawidklingbein@ranchodasimpex.com
+Before Update 183: Phone = 129-070-6493, email = beckyherrera4947@gmail.com
+after Update 183: Phone = 043-566-5860, email = gored47024@adsta415-674-2836m.com
